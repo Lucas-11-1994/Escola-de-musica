@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato | MakerMusic</title>
+    <link rel="icon" href="imagens/IconePag.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/contatoechat.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <div class="logo-icon">M</div>
+                <div class="logo-text">Maker<span>Music</span></div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="cursos.html">Cursos</a></li>
+                    <li><a href="professores.html">Professores</a></li>
+                    <li><a href="calendario.html">Calendário</a></li>
+                    <li><a href="contatoechat.html">Contato</a></li>
+                    <li>
+                        <div id="authContainer">
+                            <div id="userGreeting" class="user-greeting" style="display: none;">
+                                <span id="username" class="username"></span>
+                                <a href="#" id="logoutBtn" class="logout-btn">(sair)</a>
+                            </div>
+                            <a href="login.html" id="loginBtn" class="btn-matricula">Matricule-se</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Conteúdo principal do site -->
+    <main class="main-container">
+        <!-- Seções existentes do site MakerMusic -->
+        <!-- ... outras seções ... -->
+
+        <!-- Seção de Chat Online -->
+        <section id="chat" class="chat-section">
+            <div class="container">
+                <h2><i class="fas fa-comments"></i> Chat Online</h2>
+                <p>Tire suas dúvidas em tempo real com nosso atendimento inteligente</p>
+                
+                <div class="chat-container">
+                    <div class="chat-box">
+                        <div class="chat-header">
+                            <div class="chat-bot-info">
+                                <img src="imagens/BotAvatar.jpeg" height="30px" width="30px">
+                                <div>
+                                    <h3>MakerBot</h3>
+                                    <p class="bot-status"><i class="fas fa-circle"></i> Online</p>
+                                </div>
+                            </div>
+                            <button id="toggle-chat-info"><i class="fas fa-info-circle"></i></button>
+                        </div>
+                        <div class="chat-mensagens" id="chat-mensagens">
+                            <!-- Mensagens serão inseridas aqui via JavaScript -->
+                        </div>
+                        <div class="chat-input">
+                            <input type="text" id="mensagem-chat" placeholder="Digite sua mensagem..." autocomplete="off">
+                            <button id="enviar-chat"><i class="fas fa-paper-plane"></i></button>
+                        </div>
+                    </div>
+                    
+                    <div class="chat-info" id="chat-info">
+                        <h3><i class="fas fa-info-circle"></i> Horário de Atendimento</h3>
+                        <p><i class="far fa-clock"></i> Segunda a Sexta: 9h às 18h</p>
+                        <p><i class="far fa-clock"></i> Sábado: 9h às 13h</p>
+                        
+                        <div class="contato-alternativo">
+                            <h3><i class="fas fa-phone-alt"></i> Outros Contatos</h3>
+                            <p><i class="fab fa-whatsapp"></i> (11) 98765-4321</p>
+                            <p><i class="far fa-envelope"></i> atendimento@makermusic.com</p>
+                        </div>
+                        
+                        <div class="quick-questions">
+                            <h3><i class="fas fa-bolt"></i> Perguntas Rápidas</h3>
+                            <button class="quick-question" data-question="Quais cursos vocês oferecem?">Quais cursos vocês oferecem?</button>
+                            <button class="quick-question" data-question="Quanto custa a mensalidade?">Quanto custa a mensalidade?</button>
+                            <button class="quick-question" data-question="Aula experimental?">Aula Experimental?</button>
+                            <button class="quick-question" data-question="Localização?">Localização?</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="contato">
+        <!-- ... conteúdo do footer existente ... -->
+            <div class="footer-container">
+                <div class="footer-about">
+                    <div class="footer-logo">
+                        <div class="logo-icon">M</div>
+                        <div class="logo-text">Maker<span>Music</span></div>
+                    </div>
+                    <p>Transformando paixão por música em talento desde 2015.</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-spotify"></i></a>
+                    </div>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contato</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> R. Força Pública, 89 - 07012-030</p>
+                    <p>Centro, Guarulhos - SP</p>
+                    <p><i class="fas fa-envelope"></i> contato@makermusic.com</p>
+                    <p><i class="fas fa-phone"></i> (11) 2472-5500</p>
+                </div>
+                <div class="footer-newsletter">
+                    <h3>Email</h3>
+                    <p>Receba novidades e promoções:</p>
+                    <input type="email" placeholder="Seu e-mail">
+                    <button>Assinar</button>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 MakerMusic. Todos os direitos reservados.</p>
+            </div>
+    </footer>
+
+    <script src="../javaScript/contatoechat.js"></script>
+    <script src="../javaScript/auth.js"></script>
+
+    <script>// Bloqueia seleção de texto
+        document.addEventListener('selectstart', function(e) {
+            e.preventDefault();
+        });
+        
+        // Bloqueia botão direito do mouse
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+        });
+        
+        // Bloqueia Ctrl+C, Ctrl+A, etc.
+        document.addEventListener('keydown', function(e) {
+            if (e.ctrlKey && (e.key === 'c' || e.key === 'C' || e.key === 'a' || e.key === 'A')) {
+                e.preventDefault();
+            }
+        });</script>    
+
+</body>
+</html>

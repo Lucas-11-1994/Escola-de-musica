@@ -1,0 +1,535 @@
+/* Reset e Variáveis */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --roxo: #8A2BE2;
+    --roxo-escuro: #6A0DAD;
+    --preto: #000000;
+    --branco: #FFFFFF;
+}
+
+/* Fundo Animado */
+body {
+    background: linear-gradient(135deg, #000000 0%, #6A0DAD 30%, #c64da6 50%, #8A2BE2 70%, #ffffff 100%);
+    background-size: 400% 400%;
+    animation: gradientBG 10s ease infinite;
+    font-family: 'Open Sans', sans-serif;
+    color: #333;
+    min-height: 100vh;
+}
+
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Layout Principal */
+.main-container {
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    margin: 30px auto;
+    padding: 20px;
+    max-width: 1200px;
+    display: grid;
+}
+
+/* Header */
+header {
+    background-color: var(--preto);
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    margin-bottom: 5%;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #222;
+}
+
+.logo span {
+    color: #6a11cb;
+}
+
+.logo-icon {
+    width: 40px;
+    height: 40px;
+    background-color: var(--roxo);
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    color: var(--branco);
+    font-weight: bold;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.logo-text {
+    color: var(--branco);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.logo-text span {
+    color: var(--roxo);
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #555;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.navbar ul li a:hover {
+    color: #6a11cb;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+nav ul li {
+    margin-left: 30px;
+}
+
+nav ul li a {
+    color: var(--branco);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: var(--roxo);
+}
+
+.btn-matricula {
+    background-color: var(--roxo);
+    color: var(--branco);
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: background-color 0.3s;
+    display: inline-block;
+}
+
+.btn-matricula:hover {
+    background-color: var(--roxo-escuro);
+}
+
+/* Estilos para o container de autenticação */
+#authContainer {
+    display: flex;
+    align-items: center;
+}
+
+.user-greeting {
+    display: none;
+    align-items: center;
+    gap: 8px;
+}
+
+.username {
+    font-weight: bold;
+    color: #4a6cf7;
+}
+
+.logout-btn {
+    color: #666;
+    text-decoration: none;
+    font-size: 0.9em;
+}
+
+.logout-btn:hover {
+    text-decoration: underline;
+    color: #e74c3c;
+}
+
+
+/* Banner Musical */
+.banner-musical {
+    background: url('banner-professores.jpg') center/cover no-repeat;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.banner-musical::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.banner-texto {
+    text-align: center;
+    color: var(--branco);
+    z-index: 1;
+}
+
+.banner-texto h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.banner-texto p {
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+/* Filtros por Instrumento */
+.filtros {
+    padding: 2rem 5%;
+    background-color: var(--cor-branco);
+    box-shadow: 0 2px 5px var(--cor-sombra);
+    margin-bottom: 2rem;
+}
+
+.filtros h3 {
+    margin-top: 0;
+    color: var(--cor-primaria);
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.filtros-botoes {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.filtro-btn {
+    background-color: var(--cor-branco);
+    border: 2px solid var(--cor-primaria);
+    color: var(--cor-primaria);
+    padding: 0.5rem 1.5rem;
+    border-radius: 30px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.filtro-btn {
+    background-color: var(--cor-primaria);
+    color: #ffffff
+}
+
+.filtro-btn:hover {
+    color: #6A0DAD;
+    background-color: rgba(255, 255, 255, 0.421);
+}
+
+/* Grade de Professores */
+.moldura-profs {
+    background-color: #ffffff;
+    padding:90px 40px 40px 40px;
+    width: 1400px ;
+    margin: 4rem 0;
+}
+.center-moldura{
+    display: flex;
+    justify-content: center;;
+}
+
+.grade-professores {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 3.6rem;
+    padding: 0 5% 3rem;
+    color: #ffffff;
+    justify-content: center;
+}
+
+.card-professor {
+    background-color: #bf7bff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px var(--preto);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card-professor:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.professor-imagem {
+    position: relative;
+    height: 250px;
+    overflow: hidden;
+}
+
+.professor-imagem img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s;
+}
+
+.card-professor:hover .professor-imagem img {
+    transform: scale(1.05);
+}
+
+.instrumento-tag {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background-color: var(--cor-primaria);
+    color: var(--cor-branco);
+    padding: 0.3rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.professor-info {
+    padding: 1.5rem;
+}
+
+.professor-info h3 {
+    margin: 0 0 0.5rem 0;
+    color: var(--cor-primaria);
+    font-size: 1.5rem;
+}
+
+.especialidade {
+    font-weight: 600;
+    color: var(--cor-secundaria);
+    margin: 0 0 0.5rem 0;
+}
+
+.experiencia {
+    font-style: italic;
+    color: #FFD700;
+    margin: 0 0 1rem 0;
+}
+
+.bio {
+    margin: 0 0 1.5rem 0;
+    line-height: 1.5;
+    color: #ffffff;
+}
+
+.professor-contato {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.professor-contato a {
+    color: var(--cor-primaria);
+    text-decoration: none;
+    font-weight: 600;
+    display: flex;
+    gap: 0.3rem;
+    transition: color 0.3s;
+}
+
+.professor-contato a:hover {
+    color: var(--cor-secundaria);
+}
+
+.professor-contato i {
+    font-size: 2rem;
+}
+
+/* Footer */
+footer {
+    background-color: var(--preto);
+    color: var(--branco);
+    padding: 60px 0 30px;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+    margin-bottom: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.footer-logo .logo-icon {
+    width: 30px;
+    height: 30px;
+    font-size: 16px;
+}
+
+.footer-logo .logo-text {
+    font-size: 20px;
+}
+
+.footer-social {
+    margin-top: 20px;
+}
+
+.footer-social a {
+    color: var(--branco);
+    font-size: 20px;
+    margin-right: 15px;
+    transition: color 0.3s;
+}
+
+.footer-social a:hover {
+    color: var(--roxo);
+}
+
+.footer-newsletter input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 10px;
+}
+
+.footer-newsletter button {
+    background-color: var(--roxo);
+    color: var(--branco);
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+.footer-newsletter button:hover {
+    background-color: var(--roxo-escuro);
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 30px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    max-width: 1200px;
+    margin: 0 auto;
+}
+/* Rodapé */
+
+.copyright {
+    text-align: center;
+    padding-top: 2rem;
+    border-top: 1px solid #444;
+    color: #777;
+    font-size: 0.9rem;
+}
+
+
+/* Responsivo */
+
+@media (max-width: 980px)
+ {
+
+    .header-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .logo {
+        margin-bottom: 20px;
+        justify-content: center;
+    }
+    
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    nav ul li {
+        margin: 10px;
+    }
+    
+}
+
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .logo {
+        margin-bottom: 20px;
+        justify-content: center;
+    }
+    
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    nav ul li {
+        margin: 10px;
+    }
+   
+    .footer-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    
+    .footer-logo {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .depoimento-grid-foto {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .carrossel-grid-arrow {
+        width: 35px;
+        height: 35px;
+        font-size: 14px;
+    }
+}

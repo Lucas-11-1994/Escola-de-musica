@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MakerMusic - Acesso</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" href="imagens/IconePag.png" type="image/png">
+    <link rel="stylesheet" href="css/login.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <div class="logo-icon">M</div>
+                <div class="logo-text">Maker<span>Music</span></div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="cursos.html">Cursos</a></li>
+                    <li><a href="professores.html">Professores</a></li>
+                    <li><a href="calendario.html">Calendário</a></li>
+                    <li><a href="contatoechat.html">Contato</a></li>
+                    <li>
+                        <div id="authContainer">
+                            <div id="userGreeting" class="user-greeting" style="display: none;">
+                                <span id="username" class="username"></span>
+                                <a href="#" id="logoutBtn" class="logout-btn">(sair)</a>
+                            </div>
+                            <a href="login.html" id="loginBtn" class="btn-matricula">Matricule-se</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Container de Login/Cadastro -->
+    <div class="main-container">
+        <div class="auth-container">
+            <div class="form-container entrar-container">
+                <h1>Entrar</h1>
+                <form id="formLogin">
+                    <input type="text" id="loginUsuario" placeholder="Usuário" required>
+                    <input type="password" id="loginSenha" placeholder="Senha" required>
+                    <button type="submit">Entrar</button>
+                </form>
+            </div>
+
+            <div class="form-container inscrever-se-container">
+                <h1>Inscrever-se</h1>
+                <form id="formRegister">
+                    <input type="text" id="cadastroUsuario" placeholder="Nome" required>
+                    <input type="email" id="cadastroEmail" placeholder="E-mail">
+                    <input type="password" id="cadastroSenha" placeholder="Senha" required>
+                    <button type="submit">Cadastrar</button>
+                </form>
+            </div>
+
+            <div class="overlay-container">
+                <div class="overlay">
+                    <div class="overlay-panel overlay-left">
+                        <h2>Já tem uma conta?</h2>
+                        <button class="ghost" id="signIn">Entrar</button>
+                    </div>
+                    <div class="overlay-panel overlay-right">
+                        <h2>Ainda não tem uma conta?</h2>
+                        <button class="ghost" id="signUp">Cadastrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-about">
+                <div class="footer-logo">
+                    <div class="logo-icon">M</div>
+                    <div class="logo-text">Maker<span>Music</span></div>
+                </div>
+                <p>Transformando paixão por música em talento desde 2015.</p>
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-spotify"></i></a>
+                </div>
+            </div>
+            <div class="footer-contact">
+                <h3>Contato</h3>
+                <p><i class="fas fa-map-marker-alt"></i> R. Força Pública, 89 - Centro, Guarulhos - SP</p>
+                <p><i class="fas fa-envelope"></i> contato@makermusic.com</p>
+                <p><i class="fas fa-phone"></i> (11) 2472-5500</p>
+            </div>
+            <div class="footer-newsletter">
+                <h3>Newsletter</h3>
+                <p>Receba novidades e promoções:</p>
+                <input type="email" placeholder="Seu e-mail">
+                <button>Assinar</button>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 MakerMusic. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../javaScript/auth.js"></script>
+    <script src="../javaScript/login.js"></script>
+    <!-- Inicialização -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Atualiza a UI imediatamente ao carregar
+            if (typeof updateAuthUI === 'function') {
+                updateAuthUI();
+            }
+
+            // Adiciona o event listener para o botão de logout
+            const logoutLink = document.getElementById('logoutLink');
+            if (logoutLink) {
+                logoutLink.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    if (typeof syncLogout === 'function') {
+                        syncLogout();
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+

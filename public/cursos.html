@@ -1,0 +1,1070 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursos | MakerMusic</title>
+    <link rel="icon" href="imagens/IconePag.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/cursos.css">
+    <script src="../javaScript/auth.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <div class="logo-icon">M</div>
+                <div class="logo-text">Maker<span>Music</span></div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="cursos.html">Cursos</a></li>
+                    <li><a href="professores.html">Professores</a></li>
+                    <li><a href="calendario.html" class="active">Calendário</a></li>
+                    <li><a href="contatoechat.html">Contato</a></li>
+                    <li>
+                        <div id="authContainer">
+                            <div id="userGreeting" class="user-greeting" style="display: none;">
+                                <span id="username" class="username"></span>
+                                <a href="#" id="logoutBtn" class="logout-btn">(sair)</a>
+                            </div>
+                            <a href="login.html" id="loginBtn" class="btn-matricula">Matricule-se</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Aprenda música de verdade</h2>
+            <p>Domine teoria, técnica e prática com cursos ministrados por músicos profissionais.</p>
+            <a href="#cursos" class="btn-cta">Explorar Cursos</a>
+        </div>
+        <div class="hero-image">
+            <img src="" alt="">
+        </div>
+    </section>
+
+    <!-- Cursos -->
+    <section id="cursos" class="cursos">
+        <h2 class="section-title">Nossos <span>Cursos</span></h2>
+        <div class="cursos-grid">
+            <!-- Card 1 -->
+            <div class="curso-card">
+                <div class="curso-conteudo">
+                    <div class="curso-icon">
+                        <i class="fas fa-guitar"></i>
+                    </div>
+                    <h3>Violão para Iniciantes</h3>
+                    <p>Aprenda acordes, ritmos e suas primeiras músicas em 8 semanas.</p>
+                    <ul class="curso-info">
+                        <li><i class="far fa-clock"></i>1 horas 38 minutos</li>
+                        <li><i class="fas fa-signal"></i> Iniciante</li>
+                        
+                    </ul>
+                    <a href="#" class="btn-curso toggle-aulas">Ver Aulas</a>
+                </div>
+                
+                <div class="curso-aulas">
+                    <div class="aulas-header">
+                        <h4>Conteúdo do Curso</h4>
+                        <div class="progresso-curso">
+                            <div class="progresso-bar">
+                                <div class="progresso-completo" style="width: 0%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <ul class="aulas-lista">
+                        <li class="aula-pendente">
+                            <div class="aula-header">
+                                <i class="far fa-circle"></i>
+                                <span class="aula-titulo">Aula 1: Introdução ao Violão</span>
+                                <span class="aula-duracao">9 min 47 sec</span>
+                            </div>
+                            <div class="video-container">
+                                <iframe width="560" height="315"
+                                src="https://www.youtube.com/embed/-oT2SfILGCY?enablejsapi=1&start=1"
+                                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                        </li>
+                        <li class="aula-pendente">
+                            <div class="aula-header">
+                                <i class="far fa-circle"></i>
+                                <span class="aula-titulo">Aula 02 - Notas E Oitavas</span>
+                                <span class="aula-duracao">7 min 29 sec</span>
+                            </div>
+                            <div class="video-container">
+                                <iframe width="560" height="315" 
+                                        src="https://www.youtube.com/embed/yB9AqmAI9g0?enablejsapi=1" 
+                                        frameborder="0" 
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                        allowfullscreen>
+                                </iframe>
+                            </div>
+                        </li>
+                        <li class="aula-pendente">
+                            <div class="aula-header">
+                                <i class="far fa-circle"></i>
+                                <span class="aula-titulo">Aula 03 - Afinando o  Violão</span>
+                                <span class="aula-duracao">17 min 09 sec</span>
+                            </div>
+                            <div class="video-container">
+                                <iframe width="560" height="315" 
+                                        src="https://www.youtube.com/embed/Ruv4gyxcl-s?enablejsapi=1" 
+                                        frameborder="0" 
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                        allowfullscreen>
+                                </iframe>
+                            </div>
+                        </li>
+                        <li class="aula-pendente">
+                            <div class="aula-header">
+                                <i class="far fa-circle"></i>
+                                <span class="aula-titulo">Aula 4: Tempo E Compasso / ODE TO JOY</span>
+                                <span class="aula-duracao">17 min 29 sec</span>
+                            </div>
+                            <div class="video-container">
+                                <iframe width="560" height="315" 
+                                        src="https://www.youtube.com/embed/79FfQdFf1mc?enablejsapi=1" 
+                                        frameborder="0" 
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                        allowfullscreen>
+                                </iframe>
+                            </div>
+                        </li>
+                        <li class="aula-pendente">
+                            <div class="aula-header">
+                                <i class="far fa-circle"></i>
+                                <span class="aula-titulo">Aula 5: Destravando Os Dedos</span>
+                                <span class="aula-duracao">10 min 43 sec</span>
+                            </div>
+                            <div class="video-container">
+                                <iframe width="560" height="315" 
+                                        src="https://www.youtube.com/embed/8XHafoUWm98?enablejsapi=1" 
+                                        frameborder="0" 
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                        allowfullscreen>
+                                </iframe>
+                            </div>
+                        </li>
+                        <li class="aula-pendente">
+                            <div class="aula-header">
+                                <i class="far fa-circle"></i>
+                                <span class="aula-titulo">Aula 6: Primeiros acordes</span>
+                                <span class="aula-duracao">12 min 44 sec</span>
+                            </div>
+                            <div class="video-container">
+                                <iframe width="560" height="315"
+                                src="https://www.youtube.com/embed/ehHQiPHirHA?enablejsapi=1&start=1"
+                                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                        </li>
+                        
+                        <li class="aula-pendente">
+                            <div class="aula-header">
+                                <i class="far fa-circle"></i>
+                                <span class="aula-titulo">Aula 07 - Pra Não Dizer Que Não Falei Das Flores </span>
+                                <span class="aula-duracao">8 min 46 sec</span>
+                            </div>
+                            <div class="video-container">
+                                <iframe width="560" height="315" 
+                                        src="https://www.youtube.com/embed/RRDFTygve1M?enablejsapi=1" 
+                                        frameborder="0" 
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                        allowfullscreen>
+                                </iframe>
+                            </div>
+                        </li>
+                        
+                    
+                    <div class="aulas-footer">
+                        <a href="#" class="btn-continuar">Continuar Aula 1</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="curso-card destacado">
+                <div class="curso-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg"   width="40px" height="40px" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.5 8c-1.4 0-2.6-.8-3.2-2A6.87 6.87 0 0 0 2 9v11a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-8.5C22 9.6 20.4 8 18.5 8M2 14h20M6 14v4m4-4v4m4-4v4m4-4v4"/></svg>
+                </div>
+                <h3>Piano Clássico</h3>
+                <p>Do básico à leitura de partituras com repertório de Bach a Chopin.</p>
+                <ul class="curso-info">
+                    <li><i class="far fa-clock"></i>1 horas 30 minutos</li>
+                    <li><i class="fas fa-signal"></i> Iniciante</li>
+                    
+                </ul>
+                <span class="destaque-tag">Mais Popular</span>
+                <a href="#" class="btn-curso toggle-aulas">Ver Aulas</a>
+                <div class="curso-aulas">
+                    <div class="aulas-header">
+                        <h4>Conteúdo do Curso</h4>
+                        <div class="progresso-curso">
+                            <div class="progresso-bar">
+                                <div class="progresso-completo" style="width: 0%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <ul class="aulas-lista">
+                        <li class="aula-pendente">
+                            <div class="aula-header">
+                                <i class="far fa-circle"></i>
+                                <span class="aula-titulo">Aula 1: Curso de Piano Iniciante </span>
+                                <span class="aula-duracao">8 min 17 sec</span>
+                            </div>
+                            <div class="video-container">
+                                <iframe width="560" height="315"
+                                src="https://www.youtube.com/embed/mlb9aMeXZok?enablejsapi=1&start=1"
+                                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                        </li>
+                        <li class="aula-pendente">
+                            <div class="aula-header">
+                                <i class="far fa-circle"></i>
+                                <span class="aula-titulo">Aula 02 - Piano Iniciante </span>
+                                <span class="aula-duracao">25 min 34 sec</span>
+                            </div>
+                            <div class="video-container">
+                                <iframe width="560" height="315" 
+                                        src="https://www.youtube.com/embed/d3urecopBv0?enablejsapi=1" 
+                                        frameborder="0" 
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                        allowfullscreen>
+                                </iframe>
+                            </div>
+                        </li>
+                        <li class="aula-pendente">
+                            <div class="aula-header">
+                                <i class="far fa-circle"></i>
+                                <span class="aula-titulo">Aula 03 - Piano Iniciante </span>
+                                <span class="aula-duracao">17 min 35 sec</span>
+                            </div>
+                            <div class="video-container">
+                                <iframe width="560" height="315" 
+                                        src="https://www.youtube.com/embed/H50MOYLuAoA?enablejsapi=1" 
+                                        frameborder="0" 
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                        allowfullscreen>
+                                </iframe>
+                            </div>
+                        </li>
+                        <li class="aula-pendente">
+                            <div class="aula-header">
+                                <i class="far fa-circle"></i>
+                                <span class="aula-titulo">Aula 4: Piano Iniciante</span>
+                                <span class="aula-duracao">15 min 55 sec</span>
+                            </div>
+                            <div class="video-container">
+                                <iframe width="560" height="315" 
+                                        src="https://www.youtube.com/embed/S5OW6NxflTM?enablejsapi=1" 
+                                        frameborder="0" 
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                        allowfullscreen>
+                                </iframe>
+                            </div>
+                        </li>
+                        <li class="aula-pendente">
+                            <div class="aula-header">
+                                <i class="far fa-circle"></i>
+                                <span class="aula-titulo">Aula 5: Piano Iniciante</span>
+                                <span class="aula-duracao">7 min 18 sec</span>
+                            </div>
+                            <div class="video-container">
+                                <iframe width="560" height="315" 
+                                        src="https://www.youtube.com/embed/Lqsd1hMBNnw?enablejsapi=1" 
+                                        frameborder="0" 
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                        allowfullscreen>
+                                </iframe>
+                            </div>
+                        </li>
+                        <li class="aula-pendente">
+                            <div class="aula-header">
+                                <i class="far fa-circle"></i>
+                                <span class="aula-titulo">Aula 6: Piano Iniciante</span>
+                                <span class="aula-duracao">23 min 17 sec</span>
+                            </div>
+                            <div class="video-container">
+                                <iframe width="560" height="315"
+                                src="https://www.youtube.com/embed/LV0DH809zTI?enablejsapi=1&start=1"
+                                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                        </li>
+                        
+                        <li class="aula-pendente">
+                            <div class="aula-header">
+                                <i class="far fa-circle"></i>
+                                <span class="aula-titulo">Aula 07 - Piano Iniciante DUO JAZZ </span>
+                                <span class="aula-duracao">8 min 20 sec</span>
+                            </div>
+                            <div class="video-container">
+                                <iframe width="560" height="315" 
+                                        src="https://www.youtube.com/embed/IZKfS1XUmpQ?enablejsapi=1" 
+                                        frameborder="0" 
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                        allowfullscreen>
+                                </iframe>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="curso-card">
+                <div class="curso-icon">
+                    <i class="fas fa-microphone"></i>
+                </div>
+                <h3>Técnica Vocal</h3>
+                <p>Exercícios de respiração, afinação e projeção para cantores.</p>
+                <ul class="curso-info">
+                    <li><i class="far fa-clock"></i>1 hora e 20 minutos</li>
+                    <li><i class="fas fa-signal"></i> Iniciante</li>
+                    
+                </ul>
+                <a href="#" class="btn-curso toggle-aulas">Ver Aulas</a>
+                <div class="curso-aulas">
+                    <div class="aulas-header">
+                        <h4>Conteúdo do Curso</h4>
+                        <div class="progresso-curso">
+                            <div class="progresso-bar">
+                                <div class="progresso-completo" style="width: 0%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <ul class="aulas-lista">
+                        <li class="aula-pendente">
+                            <div class="aula-header">
+                                <i class="far fa-circle"></i>
+                                <span class="aula-titulo">Aula 1: Como ter a VOZ BONITA para Cantar Bem em 3 passos</span>
+                                <span class="aula-duracao">13 min 14 sec</span>
+                            </div>
+                            <div class="video-container">
+                                <iframe width="560" height="315"
+                                src="https://www.youtube.com/embed/5wKPrKNvEDc?enablejsapi=1&start=1"
+                                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                        </li>
+                        <li class="aula-pendente">
+                            <div class="aula-header">
+                                <i class="far fa-circle"></i>
+                                <span class="aula-titulo">Aula 02 - 
+                                    VOZ BONITA com Ajustes Vocais para Cantar Bem</span>
+                                <span class="aula-duracao">10 min 22 sec</span>
+                            </div>
+                            <div class="video-container">
+                                <iframe width="560" height="315" 
+                                        src="https://www.youtube.com/embed/Q51yGLM5LA8?enablejsapi=1" 
+                                        frameborder="0" 
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                        allowfullscreen>
+                                </iframe>
+                            </div>
+                        </li>
+                        <li class="aula-pendente">
+                            <div class="aula-header">
+                                <i class="far fa-circle"></i>
+                                <span class="aula-titulo">Aula 03 - COMO USAR O MICROFONE para Cantar Bem e ter uma VOZ BONITA</span>
+                                <span class="aula-duracao">8 min 36 sec</span>
+                            </div>
+                            <div class="video-container">
+                                <iframe width="560" height="315" 
+                                        src="https://www.youtube.com/embed/WJWsntiNw-U?enablejsapi=1" 
+                                        frameborder="0" 
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                        allowfullscreen>
+                                </iframe>
+                            </div>
+                        </li>
+                        <li class="aula-pendente">
+                            <div class="aula-header">
+                                <i class="far fa-circle"></i>
+                                <span class="aula-titulo">Aula 4: Como ter a VOZ BONITA para Cantar Qualquer Estilo</span>
+                                <span class="aula-duracao">11 min 00 sec</span>
+                            </div>
+                            <div class="video-container">
+                                <iframe width="560" height="315" 
+                                        src="https://www.youtube.com/embed/3u301EliiqA?enablejsapi=1" 
+                                        frameborder="0" 
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                        allowfullscreen>
+                                </iframe>
+                            </div>
+                        </li>
+                        <li class="aula-pendente">
+                            <div class="aula-header">
+                                <i class="far fa-circle"></i>
+                                <span class="aula-titulo">Aula 5: Como ter a Voz Bonita para Cantar em qualquer estilo (AGORA)</span>
+                                <span class="aula-duracao">14 min 02 sec</span>
+                            </div>
+                            <div class="video-container">
+                                <iframe width="560" height="315" 
+                                        src="https://www.youtube.com/embed/a9CgGfvEkMg?enablejsapi=1" 
+                                        frameborder="0" 
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                        allowfullscreen>
+                                </iframe>
+                            </div>
+                        </li>
+                        <li class="aula-pendente">
+                            <div class="aula-header">
+                                <i class="far fa-circle"></i>
+                                <span class="aula-titulo">Aula 6: Revelado: 7 Hábitos para ter uma VOZ BONITA para cantar</span>
+                                <span class="aula-duracao">12 min 30 sec</span>
+                            </div>
+                            <div class="video-container">
+                                <iframe width="560" height="315"
+                                src="https://www.youtube.com/embed/bRBzJER-Iws?enablejsapi=1&start=1"
+                                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                        </li>
+                        
+                        <li class="aula-pendente">
+                            <div class="aula-header">
+                                <i class="far fa-circle"></i>
+                                <span class="aula-titulo">Aula 07 - O que falta para você ter uma VOZ BONITA para cantar.</span>
+                                <span class="aula-duracao">11 min 05 sec</span>
+                            </div>
+                            <div class="video-container">
+                                <iframe width="560" height="315" 
+                                        src="https://www.youtube.com/embed/knC0CWYF_q8?enablejsapi=1" 
+                                        frameborder="0" 
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                        allowfullscreen>
+                                </iframe>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Card 4 -->
+            <div class="curso-card">
+                <div class="curso-icon">
+                    <i class="fas fa-drum"></i>
+                </div>
+                <h3>Bateria Moderna</h3>
+                <p>Rudimentos, grooves e viradas para bateristas de todos os estilos.</p>
+                <ul class="curso-info">
+                    <li><i class="far fa-clock"></i> 48 minutos</li>
+                    <li><i class="fas fa-signal"></i> Iniciante</li>
+                    
+                </ul>
+                <a href="#" class="btn-curso toggle-aulas">Ver Aulas</a>
+                <div class="curso-aulas">
+                    <div class="aulas-header">
+                        <h4>Conteúdo do Curso</h4>
+                        <div class="progresso-curso">
+                            <div class="progresso-bar">
+                                <div class="progresso-completo" style="width: 0%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <ul class="aulas-lista">
+                        <li class="aula-pendente">
+                            <div class="aula-header">
+                                <i class="far fa-circle"></i>
+                                <span class="aula-titulo">Aula 1: Apresentação do Curso </span>
+                                <span class="aula-duracao">5 min 57 sec</span>
+                            </div>
+                            <div class="video-container">
+                                <iframe width="560" height="315"
+                                src="https://www.youtube.com/embed/3CmlIDE6ckY?enablejsapi=1"
+                                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                        </li>
+                        <li class="aula-pendente">
+                            <div class="aula-header">
+                                <i class="far fa-circle"></i>
+                                <span class="aula-titulo">Aula 02 - Conhecendo as Peças da Bateria</span>
+                                <span class="aula-duracao">8 min 56 sec</span>
+                            </div>
+                            <div class="video-container">
+                                <iframe width="560" height="315" 
+                                        src="https://www.youtube.com/embed/3yKKxiusMBs?enablejsapi=1" 
+                                        frameborder="0" 
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                        allowfullscreen>
+                                </iframe>
+                            </div>
+                        </li>
+                        <li class="aula-pendente">
+                            <div class="aula-header">
+                                <i class="far fa-circle"></i>
+                                <span class="aula-titulo">Aula 03 - A Levada de Bateria Mais Útil do Mundo </span>
+                                <span class="aula-duracao">8 min 36 sec</span>
+                            </div>
+                            <div class="video-container">
+                                <iframe width="560" height="315" 
+                                        src="https://www.youtube.com/embed/xJiGfByIswU?enablejsapi=1" 
+                                        frameborder="0" 
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                        allowfullscreen>
+                                </iframe>
+                            </div>
+                        </li>
+                        <li class="aula-pendente">
+                            <div class="aula-header">
+                                <i class="far fa-circle"></i>
+                                <span class="aula-titulo">Aula 4: Baterista Precisa Saber Marcar o Tempo</span>
+                                <span class="aula-duracao">7 min 24 sec</span>
+                            </div>
+                            <div class="video-container">
+                                <iframe width="560" height="315" 
+                                        src="https://www.youtube.com/embed/-TlmF0kfFbg?enablejsapi=1" 
+                                        frameborder="0" 
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                        allowfullscreen>
+                                </iframe>
+                            </div>
+                        </li>
+                        <li class="aula-pendente">
+                            <div class="aula-header">
+                                <i class="far fa-circle"></i>
+                                <span class="aula-titulo">Aula 5: Como Ler Partitura de Bateria</span>
+                                <span class="aula-duracao">5 min 45 sec</span>
+                            </div>
+                            <div class="video-container">
+                                <iframe width="560" height="315" 
+                                        src="https://www.youtube.com/embed/nb1sTOGNrm8?enablejsapi=1" 
+                                        frameborder="0" 
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                        allowfullscreen>
+                                </iframe>
+                            </div>
+                        </li>
+                        <li class="aula-pendente">
+                            <div class="aula-header">
+                                <i class="far fa-circle"></i>
+                                <span class="aula-titulo">Aula 6: Aprenda Três Levadas Fáceis na Bateria</span>
+                                <span class="aula-duracao">5 min 20 sec</span>
+                            </div>
+                            <div class="video-container">
+                                <iframe width="560" height="315"
+                                src="https://www.youtube.com/embed/r4iffDOfHfE?enablejsapi=1&start=1"
+                                 frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                        </li>
+                        
+                        <li class="aula-pendente">
+                            <div class="aula-header">
+                                <i class="far fa-circle"></i>
+                                <span class="aula-titulo">Aula 07 - Rudimentos - Exercícios para Melhorar Velocidade na Bateria </span>
+                                <span class="aula-duracao">6 min 05 sec</span>
+                            </div>
+                            <div class="video-container">
+                                <iframe width="560" height="315" 
+                                        src="https://www.youtube.com/embed/oJWvL3oOMrw?enablejsapi=1" 
+                                        frameborder="0" 
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                        allowfullscreen>
+                                </iframe>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="curso-card">
+                <div class="curso-icon">
+                    <i class="fas fa-music"></i>
+                </div>
+                <h3>Teoria Musical</h3>
+                <p>Compreenda escalas, harmonias e estruturas musicais.</p>
+                <ul class="curso-info">
+                    <li><i class="far fa-clock"></i>2 hora e 17 minutos</li>
+                    <li><i class="fas fa-signal"></i> Iniciante</li>
+                    
+                </ul>
+                <a href="#" class="btn-curso toggle-aulas">Ver Aulas</a>
+                <div class="curso-aulas">
+                    <div class="aulas-header">
+                        <h4>Conteúdo do Curso</h4>
+                        <div class="progresso-curso">
+                            <div class="progresso-bar">
+                                <div class="progresso-completo" style="width: 0%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <ul class="aulas-lista">
+                        <li class="aula-pendente">
+                            <div class="aula-header">
+                                <i class="far fa-circle"></i>
+                                <span class="aula-titulo">Aula 1: 5 MOTIVOS PARA APRENDER TEORIA MUSICAL</span>
+                                <span class="aula-duracao">8 min 00 sec</span>
+                            </div>
+                            <div class="video-container">
+                                <iframe width="560" height="315"
+                                src="https://www.youtube.com/embed/P_q-mx5Dx8s?enablejsapi=1&start=1"
+                                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                        </li>
+                        <li class="aula-pendente">
+                            <div class="aula-header">
+                                <i class="far fa-circle"></i>
+                                <span class="aula-titulo">Aula 02 -APRENDA INTERVALOS MUSICAIS EM 10 MINUTOS </span>
+                                <span class="aula-duracao">11 min 08 sec</span>
+                            </div>
+                            <div class="video-container">
+                                <iframe width="560" height="315" 
+                                        src="https://www.youtube.com/embed/Qh3CRTcPSg4?enablejsapi=1" 
+                                        frameborder="0" 
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                        allowfullscreen>
+                                </iframe>
+                            </div>
+                        </li>
+                        <li class="aula-pendente">
+                            <div class="aula-header">
+                                <i class="far fa-circle"></i>
+                                <span class="aula-titulo">Aula 03 - COMO ENCONTRAR INTERVALOS MUSICAIS NO BRAÇO DO VIOLÃO </span>
+                                <span class="aula-duracao">5 min 07 sec</span>
+                            </div>
+                            <div class="video-container">
+                                <iframe width="560" height="315" 
+                                        src="https://www.youtube.com/embed/VYAUHMiLWlY?enablejsapi=1" 
+                                        frameborder="0" 
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                        allowfullscreen>
+                                </iframe>
+                            </div>
+                        </li>
+                        <li class="aula-pendente">
+                            <div class="aula-header">
+                                <i class="far fa-circle"></i>
+                                <span class="aula-titulo">Aula 4: COMO PRATICAR ESCALAS MUSICAIS? 3 DICAS PARA ESTUDAR</span>
+                                <span class="aula-duracao">15 min 27 sec</span>
+                            </div>
+                            <div class="video-container">
+                                <iframe width="560" height="315" 
+                                        src="https://www.youtube.com/embed/nWAm88PSCHw?enablejsapi=1" 
+                                        frameborder="0" 
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                        allowfullscreen>
+                                </iframe>
+                            </div>
+                        </li>
+                        <li class="aula-pendente">
+                            <div class="aula-header">
+                                <i class="far fa-circle"></i>
+                                <span class="aula-titulo">Aula 5: TRANSFORMAMOS ESSES CLÁSSICOS DO ROCK: DE GUNS A THE BEATLES</span>
+                                <span class="aula-duracao">5 min 29 sec</span>
+                            </div>
+                            <div class="video-container">
+                                <iframe width="560" height="315" 
+                                        src="https://www.youtube.com/embed/IuKCK_VbUnM?enablejsapi=1" 
+                                        frameborder="0" 
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                        allowfullscreen>
+                                </iframe>
+                            </div>
+                        </li>
+                        <li class="aula-pendente">
+                            <div class="aula-header">
+                                <i class="far fa-circle"></i>
+                                <span class="aula-titulo">Aula 6: MÚSICO AMADOR X MÚSICO QUE SABE TEORIA MUSICAL</span>
+                                <span class="aula-duracao">11 min 25 sec</span>
+                            </div>
+                            <div class="video-container">
+                                <iframe width="560" height="315"
+                                src="https://www.youtube.com/embed/53zaRI8-TVo?enablejsapi=1&start=1"
+                                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                        </li>
+                        
+                        <li class="aula-pendente">
+                            <div class="aula-header">
+                                <i class="far fa-circle"></i>
+                                <span class="aula-titulo">Aula 07 - Masterclass de Teoria Musical | Live do Cifra Club Academy </span>
+                                <span class="aula-duracao">1 h 20 min 45 sec</span>
+                            </div>
+                            <div class="video-container">
+                                <iframe width="560" height="315" 
+                                        src="https://www.youtube.com/embed/Tti4bg17714?enablejsapi=1" 
+                                        frameborder="0" 
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                        allowfullscreen>
+                                </iframe>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="curso-card">
+                <div class="curso-icon">
+                    <i class="fas fa-laptop-code"></i>
+                </div>
+                <h3>Produção Musical</h3>
+                <p>Gravação, mixagem e masterização no Ableton Live.</p>
+                <ul class="curso-info">
+                    <li><i class="far fa-clock"></i>3 hora e 12 minutos</li>
+                    <li><i class="fas fa-signal"></i> Iniciante</li>
+                    
+                </ul>
+                <a href="#" class="btn-curso toggle-aulas">Ver Aulas</a>
+                <div class="curso-aulas">
+                    <div class="aulas-header">
+                        <h4>Conteúdo do Curso</h4>
+                        <div class="progresso-curso">
+                            <div class="progresso-bar">
+                                <div class="progresso-completo" style="width: 0%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <ul class="aulas-lista">
+                        <li class="aula-pendente">
+                            <div class="aula-header">
+                                <i class="far fa-circle"></i>
+                                <span class="aula-titulo">Aula 1: Introdução ao Áudio e Produção Musical </span>
+                                <span class="aula-duracao">37 min 10 sec</span>
+                            </div>
+                            <div class="video-container">
+                                <iframe width="560" height="315"
+                                src="https://www.youtube.com/embed/H_yZyEdymfA?enablejsapi=1&start=1"
+                                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                        </li>
+                        <li class="aula-pendente">
+                            <div class="aula-header">
+                                <i class="far fa-circle"></i>
+                                <span class="aula-titulo">Aula 02 - Introdução ao Áudio e Produção Musical</span>
+                                <span class="aula-duracao">40 min 23 sec</span>
+                            </div>
+                            <div class="video-container">
+                                <iframe width="560" height="315" 
+                                        src="https://www.youtube.com/embed/baP7xGcB36w?enablejsapi=1" 
+                                        frameborder="0" 
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                        allowfullscreen>
+                                </iframe>
+                            </div>
+                        </li>
+                        <li class="aula-pendente">
+                            <div class="aula-header">
+                                <i class="far fa-circle"></i>
+                                <span class="aula-titulo">Aula 03 - Introdução ao Áudio e Produção Musical</span>
+                                <span class="aula-duracao">9 min 20 sec</span>
+                            </div>
+                            <div class="video-container">
+                                <iframe width="560" height="315" 
+                                        src="https://www.youtube.com/embed/CX0bEqBHeqg?enablejsapi=1" 
+                                        frameborder="0" 
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                        allowfullscreen>
+                                </iframe>
+                            </div>
+                        </li>
+                        <li class="aula-pendente">
+                            <div class="aula-header">
+                                <i class="far fa-circle"></i>
+                                <span class="aula-titulo">Aula 4: Introdução ao Áudio e Produção Musical</span>
+                                <span class="aula-duracao">11 min 19 sec</span>
+                            </div>
+                            <div class="video-container">
+                                <iframe width="560" height="315" 
+                                        src="https://www.youtube.com/embed/79FfQdFf1mc?enablejsapi=1" 
+                                        frameborder="0" 
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                        allowfullscreen>
+                                </iframe>
+                            </div>
+                        </li>
+                        <li class="aula-pendente">
+                            <div class="aula-header">
+                                <i class="far fa-circle"></i>
+                                <span class="aula-titulo">Aula 5: Introdução ao Áudio e Produção Musical</span>
+                                <span class="aula-duracao">30 min 06 sec</span>
+                            </div>
+                            <div class="video-container">
+                                <iframe width="560" height="315" 
+                                        src="https://www.youtube.com/embed/NgnOnL-RTNY?enablejsapi=1" 
+                                        frameborder="0" 
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                        allowfullscreen>
+                                </iframe>
+                            </div>
+                        </li>
+                        <li class="aula-pendente">
+                            <div class="aula-header">
+                                <i class="far fa-circle"></i>
+                                <span class="aula-titulo">Aula 6: Introdução ao Áudio e Produção Musical</span>
+                                <span class="aula-duracao">33 min 12 sec</span>
+                            </div>
+                            <div class="video-container">
+                                <iframe width="560" height="315"
+                                 src="https://www.youtube.com/embed/8NAnxnZzkgM?enablejsapi=1&start=1"
+                                 frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                        </li>
+                        
+                        <li class="aula-pendente">
+                            <div class="aula-header">
+                                <i class="far fa-circle"></i>
+                                <span class="aula-titulo">Aula 07 -Introdução ao Áudio e Produção Musical </span>
+                                <span class="aula-duracao">31 min 22 sec</span>
+                            </div>
+                            <div class="video-container">
+                                <iframe width="560" height="315" 
+                                        src="https://www.youtube.com/embed/knlECChVMY0?enablejsapi=1" 
+                                        frameborder="0" 
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                        allowfullscreen>
+                                </iframe>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefícios -->
+    <section class="beneficios">
+        <h2 class="section-title">Por que aprender com a <span>MusicLab</span>?</h2>
+        <div class="beneficios-grid">
+            <div class="beneficio-card">
+                <i class="fas fa-chalkboard-teacher"></i>
+                <h3>Aulas 100% Práticas</h3>
+                <p>Exercícios semanais com feedback personalizado dos professores.</p>
+            </div>
+            <div class="beneficio-card">
+                <i class="fas fa-user-graduate"></i>
+                <h3>Certificado Reconhecido</h3>
+                <p>Validação por instituições musicais internacionais.</p>
+            </div>
+            <div class="beneficio-card">
+                <i class="fas fa-video"></i>
+                <h3>Acesso Vitalício</h3>
+                <p>Assista às aulas quando e onde quiser, sem prazo para terminar.</p>
+            </div>
+        </div>
+    </section>
+
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-about">
+                <div class="footer-logo">
+                    <div class="logo-icon">M</div>
+                    <div class="logo-text">Maker<span>Music</span></div>
+                </div>
+                <p>Transformando paixão por música em talento desde 2015.</p>
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-spotify"></i></a>
+                </div>
+            </div>
+            <div class="footer-contact">
+                <h3>Contato</h3>
+                <p><i class="fas fa-map-marker-alt"></i> R. Força Pública, 89 - 07012-030</p>
+                <p>Centro, Guarulhos - SP</p>
+                <p><i class="fas fa-envelope"></i> contato@makermusic.com</p>
+                <p><i class="fas fa-phone"></i> (11) 2472-5500</p>
+            </div>
+            <div class="footer-newsletter">
+                <h3>Email</h3>
+                <p>Receba novidades e promoções:</p>
+                <input type="email" placeholder="Seu e-mail">
+                <button>Assinar</button>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 MakerMusic. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="../javaScript/cursos.js"></script>
+
+    <script>// Bloqueia seleção de texto
+        document.addEventListener('selectstart', function(e) {
+            e.preventDefault();
+        });
+        
+        // Bloqueia botão direito do mouse
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+        });
+        
+        // Bloqueia Ctrl+C, Ctrl+A, etc.
+        document.addEventListener('keydown', function(e) {
+            if (e.ctrlKey && (e.key === 'c' || e.key === 'C' || e.key === 'a' || e.key === 'A')) {
+                e.preventDefault();
+            }
+        });</script>
+
+    <!-- JavaScript do index.html integrado -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // 1. Controle de exibição dos cards
+            const toggleButtons = document.querySelectorAll('.toggle-aulas');
+            
+            toggleButtons.forEach(button => {
+                button.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const card = this.closest('.curso-card');
+                    
+                    // Fecha outros cards
+                    document.querySelectorAll('.curso-card.expandido').forEach(c => {
+                        if (c !== card) {
+                            c.classList.remove('expandido');
+                            c.querySelector('.toggle-aulas').textContent = 'Ver Aulas';
+                        }
+                    });
+                    
+                    // Alterna card atual
+                    card.classList.toggle('expandido');
+                    this.textContent = card.classList.contains('expandido') ? 'Ocultar Aulas' : 'Ver Aulas';
+                    
+                    if (card.classList.contains('expandido')) {
+                        setTimeout(() => {
+                            card.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                        }, 100);
+                    }
+                });
+            });
+            
+            // 2. Controle de aulas e vídeos
+            const aulaHeaders = document.querySelectorAll('.aula-header');
+            
+            aulaHeaders.forEach(header => {
+                header.addEventListener('click', function() {
+                    const aula = this.closest('li');
+                    const card = aula.closest('.curso-card');
+                    
+                    // Esconde outros vídeos
+                    card.querySelectorAll('.aula-ativa').forEach(a => {
+                        if (a !== aula) {
+                            a.classList.remove('aula-ativa');
+                            a.querySelector('.video-container').style.display = 'none';
+                        }
+                    });
+                    
+                    // Mostra vídeo clicado
+                    aula.classList.toggle('aula-ativa');
+                    const videoContainer = aula.querySelector('.video-container');
+                    if (videoContainer) {
+                        videoContainer.style.display = aula.classList.contains('aula-ativa') ? 'block' : 'none';
+                    }
+                });
+            });
+            
+            // 3. YouTube Player API
+            function onYouTubeIframeAPIReady() {
+                document.querySelectorAll('iframe').forEach(iframe => {
+                    new YT.Player(iframe, {
+                        events: {
+                            'onStateChange': function(event) {
+                                const aula = iframe.closest('li');
+                                const card = iframe.closest('.curso-card');
+                                const icon = aula.querySelector('i');
+                                
+                                // Quando inicia o vídeo
+                                if (event.data === YT.PlayerState.PLAYING) {
+                                    card.classList.add('aula-iniciada');
+                                    aula.classList.remove('aula-pendente');
+                                    aula.classList.add('aula-andamento');
+                                    icon.className = 'fas fa-play-circle'; // Ícone de play
+                                }
+                                
+                                // Quando pausa o vídeo
+                                if (event.data === YT.PlayerState.PAUSED) {
+                                    aula.classList.remove('aula-andamento');
+                                    icon.className = 'far fa-circle'; // Volta para círculo vazio
+                                }
+                                
+                                // Quando termina o vídeo
+                                if (event.data === YT.PlayerState.ENDED) {
+                                    aula.classList.remove('aula-pendente', 'aula-andamento');
+                                    aula.classList.add('aula-completa');
+                                    icon.className = 'fas fa-check-circle'; // Ícone de check cheio
+                                    atualizarProgresso(card);
+                                }
+                            }
+                        }
+                    });
+                });
+            }
+            
+            // 4. Atualizar progresso
+            function atualizarProgresso(card) {
+                const aulasCompletas = card.querySelectorAll('.aula-completa').length;
+                const totalAulas = card.querySelectorAll('.aulas-lista li').length;
+                const porcentagem = (aulasCompletas / totalAulas) * 100;
+                
+                card.querySelector('.progresso-completo').style.width = `${porcentagem}%`;
+                card.querySelector('.btn-continuar').textContent = 
+                    aulasCompletas < totalAulas ? `Continuar Aula ${aulasCompletas + 1}` : 'Curso Concluído';
+            }
+            
+            // Fechar ao clicar fora
+            document.addEventListener('click', function(e) {
+                if (!e.target.closest('.curso-card') && !e.target.classList.contains('toggle-aulas')) {
+                    document.querySelectorAll('.curso-card.expandido').forEach(card => {
+                        card.classList.remove('expandido');
+                        card.querySelector('.toggle-aulas').textContent = 'Ver Aulas';
+                    });
+                }
+            });
+        });
+    </script>
+
+    <!-- Carrega a API do YouTube -->
+    <script src="https://www.youtube.com/iframe_api"></script>
+
+</body>
+</html>
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Espera o authManager ser inicializado
+            const checkAuthInterval = setInterval(() => {
+                if (window.authManager && typeof window.authManager.isAuthenticated !== 'undefined') {
+                    clearInterval(checkAuthInterval);
+
+                    const isAuthenticated = window.authManager.isAuthenticated;
+                    const cursoAulas = document.querySelectorAll('.curso-aulas');
+                    const btnCursos = document.querySelectorAll('.btn-curso.toggle-aulas');
+
+                    if (!isAuthenticated) {
+                        cursoAulas.forEach(aulas => {
+                            aulas.style.display = 'none'; // Oculta as aulas
+                        });
+                        btnCursos.forEach(btn => {
+                            btn.href = '../html/login.html'; // Redireciona para a página de login
+                            btn.textContent = 'Fazer Login para Ver Aulas'; // Altera o texto do botão
+                        });
+                    } else {
+                        // Se o usuário estiver logado, a lógica original de toggle das aulas funciona
+                        // Não é necessário fazer nada aqui, pois as aulas já estão visíveis por padrão
+                        // e o script cursos.js já lida com o toggle.
+                    }
+                }
+            }, 100); // Verifica a cada 100ms
+        });
+    </script>
+
+

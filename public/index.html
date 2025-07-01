@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Início | MakerMusic</title>
+    <link rel="icon" href="imagens/IconePag.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/homepage.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <div  class="logo-icon">M</div>
+                <div class="logo-text">Maker<span>Music</span></div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="cursos.html">Cursos</a></li>
+                    <li><a href="professores.html">Professores</a></li>
+                    <li><a href="calendario.html">Calendário</a></li>
+                    <li><a href="contatoechat.html">Contato</a></li>
+                    <li>
+                        <div id="authContainer">
+                            <div id="userGreeting" class="user-greeting" style="display: none;">
+                                <span id="username" class="username"></span>
+                                <a href="#" id="logoutBtn" class="logout-btn">(sair)</a>
+                            </div>
+                            <a href="login.html" id="loginBtn" class="btn-matricula">Matricule-se</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="main-container">
+        <!-- Hero Section -->
+        <section class="hero">
+            <h1>Libere sua criatividade na MakerMusic</h1>
+            <p>Aprenda, crie e transforme-se em um músico completo com nossos cursos especializados e professores experientes.</p>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLScfjVicjvD9Xy_vC5OoBMBncPd3I1kL6pFnyjX_g_T0cKuWPQ/viewform?usp=sharing&ouid=115109070821903513165"  class="btn-hero" target="_blank">Agende uma aula experimental</a>
+        </section>
+
+        <!-- Destaques -->
+        <section class="destaques">
+            <h2>Nossos Diferenciais</h2>
+            <div class="destaques-grid">
+                <div class="destaque-card">
+                    <div class="destaque-icon">🎸</div>
+                    <h3>Aulas Personalizadas</h3>
+                    <p>Método de ensino adaptado ao seu ritmo e objetivos musicais.</p>
+                </div>
+                <div class="destaque-card">
+                    <div class="destaque-icon">🎹</div>
+                    <h3>Produção Musical</h3>
+                    <p>Estúdio equipado para você aprender a produzir suas próprias músicas.</p>
+                </div>
+                <div class="destaque-card">
+                    <div class="destaque-icon">🎤</div>
+                    <h3>Workshops ao Vivo</h3>
+                    <p>Eventos com músicos renomados para inspiração e networking.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Depoimentos com Carrossel Grid -->
+        <section class="carrossel-grid-section">
+            <h2 class="carrossel-grid-title">O que nossos alunos dizem</h2>
+            <div class="carrossel-grid-container">
+                <div class="carrossel-grid">
+                    <!-- Depoimento 1 -->
+                    <div class="depoimento-grid-card">
+                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Ana Santos" class="depoimento-grid-foto">
+                        <p class="depoimento-grid-texto">"A MakerMusic transformou completamente minha abordagem à música. Em menos de um ano, já estava compondo minhas próprias canções e me apresentando em público!"</p>
+                        <h4 class="depoimento-grid-nome">Ana Santos</h4>
+                        <p class="depoimento-grid-curso">Violão & Composição</p>
+                    </div>
+                    
+                    <!-- Depoimento 2 -->
+                    <div class="depoimento-grid-card">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Carlos Mendes" class="depoimento-grid-foto">
+                        <p class="depoimento-grid-texto">"Os professores são excepcionais e a estrutura da escola é incrível. Finalmente encontrei um lugar que me ajuda a levar minha carreira musical a sério."</p>
+                        <h4 class="depoimento-grid-nome">Carlos Mendes</h4>
+                        <p class="depoimento-grid-curso">Produção Musical</p>
+                    </div>
+                    
+                    <!-- Depoimento 3 -->
+                    <div class="depoimento-grid-card">
+                        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Juliana Costa" class="depoimento-grid-foto">
+                        <p class="depoimento-grid-texto">"Nunca imaginei que poderia cantar em público até entrar na MakerMusic. Hoje me apresento com confiança e estou gravando meu primeiro EP!"</p>
+                        <h4 class="depoimento-grid-nome">Juliana Costa</h4>
+                        <p class="depoimento-grid-curso">Canto Popular</p>
+                    </div>
+                    
+                    <!-- Depoimento 4 -->
+                    <div class="depoimento-grid-card">
+                        <img src="https://images.unsplash.com/photo-1552058544-f2b08422138a?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Rafael Lima" class="depoimento-grid-foto">
+                        <p class="depoimento-grid-texto">"Como baterista autodidata, precisava de orientação profissional. Na MakerMusic encontrei não só técnica, mas toda uma comunidade musical inspiradora."</p>
+                        <h4 class="depoimento-grid-nome">Rafael Lima</h4>
+                        <p class="depoimento-grid-curso">Bateria Avançada</p>
+                    </div>
+                    
+                    <!-- Depoimento 5 -->
+                    <div class="depoimento-grid-card">
+                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Fernanda Oliveira" class="depoimento-grid-foto">
+                        <p class="depoimento-grid-texto">"Depois de tentar aprender piano sozinha por anos, em 6 meses na MakerMusic já lia partituras e tocava peças completas. Método incrível!"</p>
+                        <h4 class="depoimento-grid-nome">Fernanda Oliveira</h4>
+                        <p class="depoimento-grid-curso">Piano Clássico</p>
+                    </div>
+                    
+                    <!-- Depoimento 6 -->
+                    <div class="depoimento-grid-card">
+                        <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Pedro Henrique" class="depoimento-grid-foto">
+                        <p class="depoimento-grid-texto">"Aprendi mais em 3 meses na MakerMusic do que em anos estudando sozinho. Os professores realmente sabem como desbloquear seu potencial."</p>
+                        <h4 class="depoimento-grid-nome">Pedro Henrique</h4>
+                        <p class="depoimento-grid-curso">Guitarra Elétrica</p>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-about">
+                <div class="footer-logo">
+                    <div class="logo-icon">M</div>
+                    <div class="logo-text">Maker<span>Music</span></div>
+                </div>
+                <p>Transformando paixão por música em talento desde 2015.</p>
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-spotify"></i></a>
+                </div>
+            </div>
+            <div class="footer-contact">
+                <h3>Contato</h3>
+                <p><i class="fas fa-map-marker-alt"></i> R. Força Pública, 89 - 07012-030</p>
+                <p>Centro, Guarulhos - SP</p>
+                <p><i class="fas fa-envelope"></i> contato@makermusic.com</p>
+                <p><i class="fas fa-phone"></i> (11) 2472-5500</p>
+            </div>
+            <div class="footer-newsletter">
+                <h3>Email</h3>
+                <p>Receba novidades e promoções:</p>
+                <input type="email" placeholder="Seu e-mail">
+                <button>Assinar</button>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 MakerMusic. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="..//javaScript/homepage.js"></script>
+    <script src="../javaScript/auth.js"></script>
+
+    <script>// Bloqueia seleção de texto
+        document.addEventListener('selectstart', function(e) {
+            e.preventDefault();
+        });
+        
+        // Bloqueia botão direito do mouse
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+        });
+        
+        // Bloqueia Ctrl+C, Ctrl+A, etc.
+        document.addEventListener('keydown', function(e) {
+            if (e.ctrlKey && (e.key === 'c' || e.key === 'C' || e.key === 'a' || e.key === 'A')) {
+                e.preventDefault();
+            }
+        });
+    </script>
+
+    <!-- Script de autenticação global -->
+    <script src="javaScript/auth.js"></script>
+</body>
+</html>
